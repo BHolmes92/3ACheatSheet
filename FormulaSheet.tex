@@ -82,11 +82,13 @@
 \section{Stresses}
 \subsection{Deformation Elongation}
 \begin{align*}
-    \delta = \frac{PL}{EA}
+    \delta = \frac{FL}{EA}\\
+    \delta = \frac{\sigma L}{E}
 \end{align*}
 
 
-\subsubsection{Torsional Sheer Stress}
+\subsection{Torsional Forumals}
+\subsubsection{Stress}
 R is the radial distance
 \begin{align*}
     \tau = \frac{Tr}{J}\\
@@ -94,15 +96,21 @@ R is the radial distance
     \tau_{max} = \frac{T}{Z_p}
 \end{align*}
 
-\subsubsection{Torsional Deformation}
+\subsubsection{Deformation}
 $\theta$ is the angle of twist across L\\
 For non-circular shafts K is section polar second moment of area and Q the section polar modulus
 \begin{align*}
+	T = \frac{P}{\omega} \hspace{2mm} T_{lb\cdot in}=63000\frac{P}{\omega}\\
     \theta = \frac{TL}{GJ}\\
-    \tau = \frac{T}{Q}\\
-    \theta = \frac{TL}{GK}
+    \textit{Non-Circular }\tau = \frac{T}{Q}\\
+    \textit{Non-Circular }\theta = \frac{TL}{GK}
 \end{align*}
-
+\subsubsection{Thin-Walled Closed Tubes}
+A = median area boundary, U is length of median boundary
+\begin{align*}
+	K = \frac{4A^2t}{U}\\
+	Q = 2tA\\
+\end{align*}
 \subsection{Shear Stress}
 V section shear force, Q is the first moment area, and t is the section thickness
 \begin{align*}
