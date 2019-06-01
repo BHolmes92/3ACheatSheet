@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% writeLaTeX Example: A quick guide to LaTeX
+%
+% Source: Dave Richeson (divisbyzero.com), Dickinson College
+% 
+% A one-size-fits-all LaTeX cheat sheet. Kept to two pages, so it 
+% can be printed (double-sided) on one piece of paper
+% 
+% Feel free to distribute this example, but please keep the referral
+% to divisbyzero.com
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{multicol,multirow}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+    { \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+	}
+
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+% -----------------------------------------------------------------------
+
+\title{MTE321 Formulas}
+
+\begin{document}
+
+\raggedright
+\footnotesize
+
+\begin{center}
+     \Large{\textbf{MTE321 Formulas}} \\
+\end{center}
+\begin{multicols}{3}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+
+\section{Stresses}
+\subsection{Deformation Elongation}
+\begin{align*}
+    \delta = \frac{PL}{EA}
+\end{align*}
+
+
+\subsubsection{Torsional Sheer Stress}
+R is the radial distance
+\begin{align*}
+    \tau = \frac{Tr}{J}\\
+    Z_p = \frac{J}{c}\\
+    \tau_{max} = \frac{T}{Z_p}
+\end{align*}
+
+\subsubsection{Torsional Deformation}
+$\theta$ is the angle of twist across L\\
+For non-circular shafts K is section polar second moment of area and Q the section polar modulus
+\begin{align*}
+    \theta = \frac{TL}{GJ}\\
+    \tau = \frac{T}{Q}\\
+    \theta = \frac{TL}{GK}
+\end{align*}
+
+\subsection{Shear Stress}
+V section shear force, Q is the first moment area, and t is the section thickness
+\begin{align*}
+	\tau_{(y)} = \frac{VQ}{It}\\
+	\textit{Rectangular Beam }\tau_{max} = \frac{3V}{2A}\\
+	\textit{Solid Round Beam }\tau_{max} = \frac{4V}{3A}\\
+	\textit{Hollow Round Beam }\tau_{max} = \frac{2V}{A}
+\end{align*}
+
+\subsubsection{Beam Bending}
+M is the moment at the section, y is the distance from the neutral axis
+\begin{align*}
+    \sigma_{y} = -\frac{My}{I}
+\end{align*}
+
+\section{Stress Concentrations}
+
+\subsection{Stress Concentration Factor}
+K\textsubscript{t} is material and loading dependent, values greater than 3 are a waste
+\begin{align*}
+    \sigma_{max} = K_t\sigma_{nom}
+\end{align*}
+\subsubsection{Curved Beam Bending}
+\begin{align*}
+	\sigma_{(r)} = \frac{M(\theta)(R-r)}{Ar(r_c-R)}
+\end{align*}
+\subsection{Thermal Strain}
+\begin{align*}
+	\epsilon_x^m=-\alpha\delta T
+\end{align*}
+\subsection{Principle Stresses}
+\begin{align*}
+	tan2\theta_\sigma = \frac{2\tau_{xy}}{\sigma_x-\sigma_y}\\
+	\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau^2_{xy}}
+\end{align*}
+\end{multicols}
+
+\end{document}
