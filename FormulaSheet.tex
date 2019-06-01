@@ -134,6 +134,10 @@ K\textsubscript{t} is material and loading dependent, values greater than 3 are 
     \sigma_{max} = K_t\sigma_{nom}
 \end{align*}
 \subsubsection{Curved Beam Bending}
+R = $\frac{A}{ASF}$\\
+r = distance to required stress location\\
+r\textsubscript{c}= centroid distance\\
+A = cross-sectional area\\
 \begin{align*}
 	\sigma_{(r)} = \frac{M(\theta)(R-r)}{Ar(r_c-R)}
 \end{align*}
@@ -144,7 +148,9 @@ K\textsubscript{t} is material and loading dependent, values greater than 3 are 
 \subsection{Principle Stresses}
 \begin{align*}
 	tan2\theta_\sigma = \frac{2\tau_{xy}}{\sigma_x-\sigma_y}\\
-	\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau^2_{xy}}
+	\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau^2_{xy}}\\
+	\textit{Max }\sigma_{norm} = \frac{1}{2}(\sigma_x + \sigma_y) + \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
+	\textit{Min }\sigma_{norm} = \frac{1}{2}(\sigma_x - \sigma_y) - \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
 \end{align*}
 \end{multicols}
 
