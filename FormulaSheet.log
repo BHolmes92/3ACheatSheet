@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2019.6.7)  7 JUN 2019 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2019.6.7)  7 JUN 2019 01:17
 entering extended mode
 **./FormulaSheet.tex
 (FormulaSheet.tex
@@ -407,3 +407,88 @@ Package color Info: Driver file: pdftex.def on input line 147.
 ("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
 ex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+
+("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen136
+\scratchbox=\box55
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen137
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks29
+)))
+Package hyperref Info: Link coloring ON on input line 67.
+
+("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
+sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
+lestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count132
+)
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
+ (FormulaSheet.out) (FormulaSheet.out)
+\@outlinefile=\write3
+\openout3 = `FormulaSheet.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+
+("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+ ("C:\Users\Morgan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+ [1
+
+{C:/Users/Morgan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+
+(FormulaSheet.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package rerunfilecheck Info: File `FormulaSheet.out' has not changed.
+(rerunfilecheck)             Checksum: 9BFE6E671264E719B8F0A320C07A9596;1221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+ ) 
+Here is how much of TeX's memory you used:
+ 6436 strings out of 492973
+ 94091 string characters out of 3126250
+ 243093 words of memory out of 3000000
+ 10224 multiletter control sequences out of 15000+200000
+ 10560 words of font info for 39 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 28i,10n,28p,240b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Morgan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/Morgan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Users/Morgan/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Morgan/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Morgan/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
+sers/Morgan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb><C:/Users/Morgan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr6.pfb><C:/Users/Morgan/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/Morgan/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Morgan/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Morgan/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on FormulaSheet.pdf (1 page, 143521 bytes).
+PDF statistics:
+ 140 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+
