@@ -33,6 +33,7 @@
 \usepackage{ifthen}
 \usepackage[landscape]{geometry}
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{graphicx}
 
 
 \ifthenelse{\lengthtest { \paperwidth = 11in}}
@@ -181,12 +182,31 @@ s\textsubscript{n} from table appendix 3\\
 C\textsubscript{m} material flaws\\
 C\textsubscript{R} Reliability Factor\\
 C\textsubscript{s} = size factor (5-12,5-4 circular),(5-13 for other)\\
-\subsubsection{Goodman Method}
+\includegraphics[scale=0.5]{ActualEnduranceLimit.png}
+\subsection{Goodman Method}
+\subsubsection{Dynamic Loads Ductile}
+\begin{align*}
+(\sigma_m < 0)\\
+\textit{Von Mises: } N_1 = \frac{s^`_n}{K_t\sigma^`_a}\\
+\textit{Tresca: } N_1 = \frac{s^`_n}{K_t\sigma^`_a}\\
+\end{align*}
+\subsubsection{Dynamic Loads Tensile}
+\begin{align*}
+(\sigma_m > 0)\\
+\textit{Von Mises: } \frac{K_t\sigma^`_a}{s^`n} + \frac{\sigma^`_m}{s_u} = \frac{1}{N_1}\\
+\textit{Tresca: } \frac{2K_t}{s^`_n}(\tau_a)_{max} + \frac{4}{3s_u}(\tau_m)_{max} = \frac{1}{N_1}\\
+\end{align*}
+\subsubsection{Dynamic Yield Test}
+\begin{align*}
+\textit{for low }\sigma_a\textit{ high }\sigma_m\\
+\textit{Von Mises: } \frac{K_t\sigma^`_a}{s_{y}} + \frac{K_t\sigma^`_m}{s_y} = \frac{1}{N_2}\\
+\textit{Tresca: } \frac{2K_t}{s_{sy}}(\tau_a)_{max} + \frac{2K_t}{S_{sy}}(\tau_m)_{max} = \frac{1}{N_2}
+\end{align*}
+Effective safety factor is < of N\textsubscript{1} and N\textsubscript{2}
 \section{Gears}
 \subsection{Pitch Line Speed}
 \begin{align*}
 V_T = \frac{\pi D\cdot n_p}{12}
 \end{align*}
 \end{multicols}
-
 \end{document}
