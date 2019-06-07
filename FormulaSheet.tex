@@ -183,6 +183,25 @@ A = cross-sectional area\\
 	\textit{Max }\sigma_{norm} = \frac{1}{2}(\sigma_x + \sigma_y) + \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
 	\textit{Min }\sigma_{norm} = \frac{1}{2}(\sigma_x - \sigma_y) - \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
 \end{align*}
+\section{Design: Dynamic Loads}
+\subsection{Stress}
+\subsubsection{Periodic}
+Fluctuating $\sigma_m \neq 0$ , R = -1\\
+Pulsating $\sigma_m = 0$, R =1\\
+\subsubsection{Endurance Limit}
+s\textsubscript{a} =Stress Amplitude Level\\
+N: number of cycles to failure\\
+s\textsubscript{n} = fatigue limit\\
+Assume s\textsubscript{n} = 0.5s\textsubscript{u} if no data\\
+\begin{align*}
+s_a = s_nN^b\\
+s^`_n = C_mC_{st}C_RC_Ss_n\\
+\end{align*}
+s\textsubscript{n} from table appendix 3\\
+C\textsubscript{m} material flaws\\
+C\textsubscript{R} Reliability Factor\\
+C\textsubscript{s} = size factor (5-12,5-4 circular),(5-13 for other)\\
+\subsubsection{Goodman Method}
 \section{Gears}
 \subsection{Pitch Line Speed}
 \begin{align*}
