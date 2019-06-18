@@ -94,14 +94,16 @@ R is the radial distance
 \begin{align*}
     \tau = \frac{Tr}{J}\\
     Z_p = \frac{J}{c}\\
-    \tau_{max} = \frac{T}{Z_p}
+    \tau_{max} = \frac{T}{Z_p}\\
+    \textit{Hollow: }J = \frac{\pi}{2}(C^4 - C_i^4)\\
+    \textit{Solid: }J = \frac{\pi}{2}C^4\\    
 \end{align*}
 
 \subsubsection{Deformation}
 $\theta$ is the angle of twist across L\\
 For non-circular shafts K is section polar second moment of area and Q the section polar modulus
 \begin{align*}
-	T = \frac{P}{\omega} \hspace{2mm} T_{lb\cdot in}=63000\frac{P}{\omega}\\
+	T = \frac{P_W}{\omega} \hspace{4mm} T_{lb\cdot in}=63000\frac{P_{hp}}{\omega}\\
     \theta = \frac{TL}{GJ}\\
     \textit{Non-Circular }\tau = \frac{T}{Q}\\
     \textit{Non-Circular }\theta = \frac{TL}{GK}
@@ -118,13 +120,17 @@ V section shear force, Q is the first moment area, and t is the section thicknes
 	\tau_{(y)} = \frac{VQ}{It}\\
 	\textit{Rectangular Beam }\tau_{max} = \frac{3V}{2A}\\
 	\textit{Solid Round Beam }\tau_{max} = \frac{4V}{3A}\\
-	\textit{Hollow Round Beam }\tau_{max} = \frac{2V}{A}
+	\textit{Hollow Round Beam }\tau_{max} = \frac{2V}{A}\\
+	Q = A_p\bar{y}\\
+	\bar{y} = \textit{Distance to central axis}\\
+	A_p = \frac{1}{12}t\cdot h\textit{ rectangle}\\
 \end{align*}
 
 \subsubsection{Beam Bending}
 M is the moment at the section, y is the distance from the neutral axis
 \begin{align*}
-    \sigma_{y} = -\frac{My}{I}
+    \sigma_{y} = -\frac{My}{I}\\
+    \sigma_{max} = \frac{M}{S}\\
 \end{align*}
 
 \section{Stress Concentrations}
@@ -140,11 +146,12 @@ r = distance to required stress location\\
 r\textsubscript{c}= centroid distance\\
 A = cross-sectional area\\
 \begin{align*}
-	\sigma_{(r)} = \frac{M(\theta)(R-r)}{Ar(r_c-R)}
+	\sigma_{(r)} = \frac{M(\theta)(R-r)}{Ar_o(r-R)}
 \end{align*}
 \subsection{Thermal Strain}
 \begin{align*}
-	\epsilon_x^m=-\alpha\Delta T
+	\textit{Fixed between two walls }\epsilon_x^m=-\alpha\Delta T\\
+	\epsilon_x^t = \alpha\Delta T\\
 \end{align*}
 \subsection{Principle Stresses}
 \begin{align*}
@@ -152,6 +159,22 @@ A = cross-sectional area\\
 	\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau^2_{xy}}\\
 	\textit{Max }\sigma_{norm} = \frac{1}{2}(\sigma_x + \sigma_y) + \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
 	\textit{Min }\sigma_{norm} = \frac{1}{2}(\sigma_x - \sigma_y) - \sqrt{\left[\frac{1}{2}\sigma_x-\sigma_y\right]^2 + \tau_{xy}^2}\\
+	\tau_{max} = \pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau_{xy}^2}\\
+\end{align*}
+\section{Static Loads}
+\subsection{Effective Stress}
+\begin{align*}
+\textit{Tresca: }\sigma^` = \frac{\sigma_1-\sigma_3}{2}\\
+\textit{Von Mises: }\sigma_e = \frac{1}{\sqrt{2}}\sqrt{(\sigma_1 - \sigma_2)^2 + (\sigma_1 - \sigma_3)^2 + (\sigma_2 - \sigma_3)^2}
+\end{align*}
+\subsection{Static Loading}
+\begin{align*}
+N = \frac{s_y}{2\tau_{max}}\\
+N = \frac{s_y}{\sigma_e}\\
+\textit{If brittle}\\
+N = \frac{S_{ut}}{K_t\sigma_1}\\
+N = \frac{S_{uc}}{K_t\sigma_3}\\
+\sigma_1 > \sigma_2 > \sigma_3\\
 \end{align*}
 \section{Design Factors}
 \subsection{A\textsubscript{95} Equivalence}
@@ -171,7 +194,7 @@ A = cross-sectional area\\
 \subsection{Stress}
 \subsubsection{Periodic}
 Fluctuating $\sigma_m \neq 0$ , R = -1\\
-Pulsating $\sigma_m = 0$, R =1\\
+Pulsating $\sigma_{min} = 0$, R =1\\
 \subsubsection{Endurance Limit}
 s\textsubscript{a} =Stress Amplitude Level\\
 N: number of cycles to failure\\
@@ -180,16 +203,17 @@ Assume s\textsubscript{n} = 0.5s\textsubscript{u} if no data\\
 \begin{align*}
 s_a = s_nN^b\\
 s^`_n = C_mC_{st}C_RC_Ss_n\\
+\textit{C\textsubscript{S} only in bending}\\
 \end{align*}
 s\textsubscript{n} from table appendix 3\\
 C\textsubscript{m} material flaws\\
-C\textsubscript{R} Reliability Factor\\
+C\textsubscript{R} Reliability Factor Assume 0.99 reliability\\
 C\textsubscript{s} = size factor (5-12,5-4 circular),(5-13 for other)\\
 \includegraphics[scale=0.5]{ActualEnduranceLimit.png}
 \subsection{Goodman Method}
-\subsubsection{Dynamic Loads Ductile}
+\subsubsection{Dynamic Loads Compressive}
 \begin{align*}
-(\sigma_m < 0)\\
+(\sigma_m \leq 0)\\
 \textit{Von Mises: } N_1 = \frac{s^`_n}{K_t\sigma^`_a}\\
 \textit{Tresca: } N_1 = \frac{s^`_n}{K_t\sigma^`_a}\\
 \end{align*}
@@ -215,12 +239,16 @@ V_T = \frac{\pi D\cdot n_p}{12}
 \section{Gears}
 \subsection{Spur Gears}
 \begin{align*}
+\textit{Center Distance }C=R_P + R_G\\
 \textit{Speed of Gears: } \frac{n_p}{n_G}=\frac{N_G}{N_P}\\
 \textit{Common Speed: } v_T = R_1\omega_1 = R_2\omega_2 \\
 \textit{Tangental Acceleration: }a_T = R_1\alpha_1 = R_2\alpha_2\\
-\textit{Velocity Ratio: } VR = \frac{R_G}{R_P} >= 1\\
+\textit{Velocity Ratio: } VR = \frac{R_G}{R_P} \geq 1 = \frac{N_G}{N_P}=\frac{n_p}{n_G}=\frac{\omega_P}{\omega_G}\\
 \textit{Circular Pitch: } p = \frac{\pi D}{N}\\
-\textit{Contact Ratio: }\\
+\textit{Contact Ratio: }m_f = \frac{\sqrt{R_{oP}^2 - R_{{bP}}}+\sqrt{R_{oG}^2 - R_{{bG}}}-c\sin\phi}{p\cos\phi}\\
+P=T\omega\\
+\textit{backlash:}=w-t\\
+w\rightarrow\textit{Tooth Space, distance pitch circle travels between teeth}\\
 \end{align*}
 \subsection{Helical Gears}
 \begin{align*}
@@ -231,6 +259,7 @@ V_T = \frac{\pi D\cdot n_p}{12}
 \textit{Normal Pressure Angle: }\phi_n = \tan^{-1}(\tan\phi_t \cdot \cos\psi)\\
 \textit{Diametral Pitch: }P_{nd} = \frac{P_d}{\cos\psi}\\
 \textit{Axial Pitches in Face: } \frac{F_w}{P_x}\\
+\textit{Normal Diametral Pitch: } P_{nd} = \frac{P_d}{\cos\psi}
 \end{align*}
 \subsection{Gear Train}
 \begin{align*}
@@ -238,8 +267,12 @@ TV_{nom} = \frac{n_{in}}{n_{out}}\\
 \end{align*}
 \subsection{Racks}
 \begin{align*}
-\textit{Velocity of Rack: }V_R = R_p\omega_p = \left(\frac{D_p}{2}\right)\omega_p\\
+\textit{Velocity of Rack: }V_R = V_T = R_p\omega_p = \left(\frac{D_p}{2}\right)\omega_p\\
 \textit{Displacement of Rack: }s = \frac{D_p}{2}\theta_p\\
+\end{align*}
+\subsection{Bevel}
+\begin{align*}
+TV = \frac{\omega_{p1}}{\omega_{GN}}
 \end{align*}
 \end{multicols}
 \end{document}

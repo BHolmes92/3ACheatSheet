@@ -11,21 +11,25 @@
 \BOOKMARK [3][-]{section*.11}{Curved Beam Bending}{section*.10}% 11
 \BOOKMARK [2][-]{section*.12}{Thermal Strain}{section*.9}% 12
 \BOOKMARK [2][-]{section*.13}{Principle Stresses}{section*.9}% 13
-\BOOKMARK [1][-]{section*.14}{Design Factors}{}% 14
-\BOOKMARK [2][-]{section*.15}{A95 Equivalence}{section*.14}% 15
-\BOOKMARK [1][-]{section*.16}{Design: Dynamic Loads}{}% 16
-\BOOKMARK [2][-]{section*.17}{Loading}{section*.16}% 17
-\BOOKMARK [2][-]{section*.18}{Stress}{section*.16}% 18
-\BOOKMARK [3][-]{section*.19}{Periodic}{section*.18}% 19
-\BOOKMARK [3][-]{section*.20}{Endurance Limit}{section*.18}% 20
-\BOOKMARK [2][-]{section*.21}{Goodman Method}{section*.16}% 21
-\BOOKMARK [3][-]{section*.22}{Dynamic Loads Ductile}{section*.21}% 22
-\BOOKMARK [3][-]{section*.23}{Dynamic Loads Tensile}{section*.21}% 23
-\BOOKMARK [3][-]{section*.24}{Dynamic Yield Test}{section*.21}% 24
-\BOOKMARK [1][-]{section*.25}{Gears}{}% 25
-\BOOKMARK [2][-]{section*.26}{Pitch Line Speed}{section*.25}% 26
-\BOOKMARK [1][-]{section*.27}{Gears}{}% 27
-\BOOKMARK [2][-]{section*.28}{Spur Gears}{section*.27}% 28
-\BOOKMARK [2][-]{section*.29}{Helical Gears}{section*.27}% 29
-\BOOKMARK [2][-]{section*.30}{Gear Train}{section*.27}% 30
-\BOOKMARK [2][-]{section*.31}{Racks}{section*.27}% 31
+\BOOKMARK [1][-]{section*.14}{Static Loads}{}% 14
+\BOOKMARK [2][-]{section*.15}{Effective Stress}{section*.14}% 15
+\BOOKMARK [2][-]{section*.16}{Static Loading}{section*.14}% 16
+\BOOKMARK [1][-]{section*.17}{Design Factors}{}% 17
+\BOOKMARK [2][-]{section*.18}{A95 Equivalence}{section*.17}% 18
+\BOOKMARK [1][-]{section*.19}{Design: Dynamic Loads}{}% 19
+\BOOKMARK [2][-]{section*.20}{Loading}{section*.19}% 20
+\BOOKMARK [2][-]{section*.21}{Stress}{section*.19}% 21
+\BOOKMARK [3][-]{section*.22}{Periodic}{section*.21}% 22
+\BOOKMARK [3][-]{section*.23}{Endurance Limit}{section*.21}% 23
+\BOOKMARK [2][-]{section*.24}{Goodman Method}{section*.19}% 24
+\BOOKMARK [3][-]{section*.25}{Dynamic Loads Compressive}{section*.24}% 25
+\BOOKMARK [3][-]{section*.26}{Dynamic Loads Tensile}{section*.24}% 26
+\BOOKMARK [3][-]{section*.27}{Dynamic Yield Test}{section*.24}% 27
+\BOOKMARK [1][-]{section*.28}{Gears}{}% 28
+\BOOKMARK [2][-]{section*.29}{Pitch Line Speed}{section*.28}% 29
+\BOOKMARK [1][-]{section*.30}{Gears}{}% 30
+\BOOKMARK [2][-]{section*.31}{Spur Gears}{section*.30}% 31
+\BOOKMARK [2][-]{section*.32}{Helical Gears}{section*.30}% 32
+\BOOKMARK [2][-]{section*.33}{Gear Train}{section*.30}% 33
+\BOOKMARK [2][-]{section*.34}{Racks}{section*.30}% 34
+\BOOKMARK [2][-]{section*.35}{Bevel}{section*.30}% 35
