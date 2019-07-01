@@ -146,7 +146,7 @@ r = distance to required stress location\\
 r\textsubscript{c}= centroid distance\\
 A = cross-sectional area\\
 \begin{align*}
-	\sigma_{(r)} = \frac{M(\theta)(R-r)}{Ar_o(r-R)}
+	\sigma_{(r)} = \frac{M(R-r)}{Ar(r-R)}
 \end{align*}
 \subsection{Thermal Strain}
 \begin{align*}
@@ -257,7 +257,7 @@ w\rightarrow\textit{Tooth Space, distance pitch circle travels between teeth}\\
 \textit{Axial Pitch: }p_x = \frac{p_t}{\tan\psi}\\
 \textit{Pitch Diameter: }D_G = \frac{N}{P_d}\\
 \textit{Normal Pressure Angle: }\phi_n = \tan^{-1}(\tan\phi_t \cdot \cos\psi)\\
-\textit{Diametral Pitch: }P_{nd} = \frac{P_d}{\cos\psi}\\
+\textit{Diametral Pitch: }P_{d} = \frac{N}{D}\\
 \textit{Axial Pitches in Face: } \frac{F_w}{P_x}\\
 \textit{Normal Diametral Pitch: } P_{nd} = \frac{P_d}{\cos\psi}
 \end{align*}
@@ -270,9 +270,65 @@ TV_{nom} = \frac{n_{in}}{n_{out}}\\
 \textit{Velocity of Rack: }V_R = V_T = R_p\omega_p = \left(\frac{D_p}{2}\right)\omega_p\\
 \textit{Displacement of Rack: }s = \frac{D_p}{2}\theta_p\\
 \end{align*}
-\subsection{Bevel}
+\section{Gear Stress}
+\subsection{Bending Stress}
 \begin{align*}
-TV = \frac{\omega_{p1}}{\omega_{GN}}
+\sigma_t = \frac{W_tP_d}{FJ}\\
+J = \frac{Y}{K_t}\\
+\textit{Y = Lewis Form Factor}\\
+s_t = \sigma_tK_0K_SK_mK_BK_v\\
+\includegraphics[scale=0.45]{bendingStressFactors.png}
+\end{align*}
+\subsection{Contact Stress}
+\begin{align*}
+\sigma_c = C_P\sqrt{\frac{W_t}{FD_PI}}\\
+s_c = C_p\sqrt{\frac{W_tK_oK_SK_mK_v}{FD_PI}}\\
+\includegraphics[scale=0.45]{contactStressFactors.png}
+\end{align*}
+\section{Power Capacity}
+\begin{align*}
+\textit{Bending}\\
+P_{CAP} = \frac{s_{at}Y_NFJn_pD_P}{(126000)P_d(SF)K_RK_OK_SK_mK_BK_v}\\
+\textit{Contact}\\
+P_{CAP} = \frac{n_pFI}{126000K_oK_sK_mK_v}\left[\frac{s_{ac}D_PZ_N}{(SF)K_RC_P}\right]^2\\
+\end{align*}
+\section{Driven Forces}
+\subsection{Spur Gears}
+\begin{align*}
+\textit{Tangental Forces: } W_t = \frac{T}{\frac{D}{2}}\\
+\textit{Radial Force: } W_r = W_t\tan\phi\\
+\end{align*}
+\subsection{Chains/Belts}
+\begin{align*}
+\textit{Chain/Sproket: }\\
+F_{cx} = F_c\cos\phi\hspace{4mm}F_{cy}=F_c\sin\phi\\
+\textit{Belt Sheave}\\
+\textit{V-Belt: }F_B=1.5\frac{T}{\frac{D}{2}}\\
+\textit{Flat Belt: }F_B=2\frac{T}{\frac{D}{2}}\\
+VR = \frac{\omega_{driving}}{\omega_{driven}}\\
+\end{align*}
+\subsection{Shoulder Fillets}
+\begin{align*}
+\textit{Sharp Fillet (Bearing): }K_t = 2.5\\
+\textit{Rounded Fillet: }K_t = 1.5\\
+\textit{Retaing Ring: }K_t = 3.0\\
+\textit{Profile Keyseat: }K_t = 2.0\\
+\textit{Sled Runner Keyseat: }K_t = 1.6\\
+\end{align*}
+\section{Design}
+\subsection{Shear Stress}
+\begin{align*}
+\tau_d = K_t\left(\frac{4V}{3A}\right) \hspace{4mm} N = 0.577\frac{s`_n}{\tau_d} \hspace{4mm} A = \frac{\pi D^2}{A}\\
+D = \sqrt{\frac{2.94K_tVN}{s`_n}}\\
+\end{align*}
+\subsection{Bending\textbackslash Torsion}
+\begin{align*}
+M = \sqrt{M_x^2 + M_y^2}\\
+\left(\frac{\sigma}{s`_n}\right)^2 + \left(\frac{\tau}{s_{ys}}\right)^2 = 1\\
+s_{ys} = \frac{s_y}{\sqrt{3}} \hspace{4mm} s_{ys} = \frac{s_y}{\sqrt{3}}\\
+\left(\frac{K_TN\sigma}{s`_n}\right)^2+\left(\frac{N_T}{s_{ys}}\right)^2 =1\\
+D^3 = \frac{32N}{\pi}\sqrt{\left(\frac{K_tM}{s`_n}\right)^2 + \frac{3}{4}\left(\frac{\tau}{s_y}\right)^2}\\
+\textit{Steel Shafts: }s`_n = s_n C_R C_s\\
 \end{align*}
 \end{multicols}
 \end{document}
